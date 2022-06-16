@@ -405,8 +405,8 @@ p{
     min-width: 13vw;
     text-align: center;
 }
-.icon-discord::after{
-    content: "  Discord  ";
+.icon-facebook::after{
+    content: "Facebook";
     min-width: 13vw;
     text-align: center;
 }
