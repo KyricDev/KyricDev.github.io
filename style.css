@@ -75,6 +75,9 @@ p{
 .space-between-row{
     align-items: space-between;
 }
+.align-self-center{
+    align-self: center;
+}
 
 .height-25r{
     height: 41vw;
@@ -279,6 +282,18 @@ p{
     border-radius: 20px;
     border: 5px solid black;
 }
+.img-horizontal{
+    
+    height: auto;
+    width: 30vw;
+    min-width: 170px;
+    /*
+    height: 0px;
+    width: 0px;
+    */
+    border-radius: 20px;
+    border: 5px solid black;
+}
 
 .img-behind{
     right: 14%;
@@ -289,7 +304,7 @@ p{
 }
 .black-filter{
     position: absolute;
-    height: calc(100% - 14px);
+    height: calc(100% - 20px);
     width: 100%;
     border-radius: 20px;
     background: black;
@@ -526,6 +541,12 @@ p{
     }
     .icon-discord::after{
         margin-top: 10%;
+    }
+    .margin-top-46{
+        margin-top: 0vw;
+    }
+    .img-horizontal{
+        width: 70vw;
     }
 }
 @media screen and (max-height: 150vw) and (min-height: 109vw){
