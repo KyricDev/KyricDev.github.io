@@ -226,7 +226,7 @@ p{
 }
 
 .padding-top-5{
-    padding-top: 4rem;
+    padding-top: 7vw;
     margin-right: 50vw;
 }
 
@@ -552,6 +552,9 @@ p{
     .img-vertical{
         min-width: 170px;
     }
+    .padding-top-5{
+        padding-top: 22vw;
+    }
 }
 @media screen and (max-height: 150vw) 
               and (min-height: 109vw){
@@ -563,5 +566,8 @@ p{
     }
     .padding-top-10 {
         padding-top: 32vw;
+    }
+    .padding-top-5 {
+        padding-top: 15vw;
     }
 }
