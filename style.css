@@ -4,8 +4,8 @@ html{
 }
 
 svg{
-    width: 10vw;
-    height: 10vw;
+    width: 8vw;
+    height: 8vw;
 }
 
 body{
@@ -80,11 +80,11 @@ p{
 }
 
 .height-25r{
-    height: 41vw;
+    height: 35vw;
 }
 
 .height-90{
-    height: 90%;
+    height: 85%;
 }
 .title-margin{
     margin-top: 20vw;
@@ -273,8 +273,9 @@ p{
 .img-vertical{
     
     height: auto;
-    width: 15vw;
-    min-width: 170px;
+    /* width: 15vw; */
+    width: 13vw;
+    min-width: 130px;
     /*
     height: 0px;
     width: 0px;
@@ -524,7 +525,7 @@ p{
         top: -8.4%;
     }
     .padding-top-10 {
-        padding-top: 55vw;
+        padding-top: 65vw;
     }
     .icon-content::before {
         opacity: 0;
@@ -548,8 +549,12 @@ p{
     .img-horizontal{
         width: 70vw;
     }
+    .img-vertical{
+        min-width: 170px;
+    }
 }
-@media screen and (max-height: 150vw) and (min-height: 109vw){
+@media screen and (max-height: 150vw) 
+              and (min-height: 109vw){
     .title-margin{
         margin-top: 55vw;
     }
