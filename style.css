@@ -295,7 +295,13 @@ p{
     border-radius: 20px;
     border: 5px solid black;
 }
-
+.img-square{
+    height: auto;
+    width: 20vw;
+    min-width: 170px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
 .img-behind{
     right: 14%;
     top: -7%;
