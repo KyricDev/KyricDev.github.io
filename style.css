@@ -447,6 +447,14 @@ p{
     padding: 50px;
     margin: 50px;
 }
+.tech-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12vw;
+    min-height: 2.5rem;
+    justify-content: space-between;
+}
 /*
 @media screen and (max-width: 525px) {
 .vw-70{
