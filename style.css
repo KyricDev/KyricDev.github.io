@@ -561,6 +561,10 @@ p{
     .padding-top-5{
         padding-top: 22vw;
     }
+    .img-square{
+        z-index: -1;
+        opacity: 0.5;
+    }
 }
 @media screen and (max-height: 150vw) 
               and (min-height: 109vw){
