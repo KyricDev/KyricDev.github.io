@@ -401,6 +401,9 @@ p{
 .icon-email::after{
     content: "Copy Email";
 }
+.icon-email-clicked::after{
+    content: "Copied";
+}
 .icon-github::after{
     content: "  Github  ";
     min-width: 13vw;
