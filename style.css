@@ -11,6 +11,7 @@ svg{
 body{
     padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -136,8 +137,12 @@ p{
 .font-castorgate{
     font-family: 'Castorgate', sans-serif;
 }
+.bg-color-purple{
+    background-color: rgb(13, 6, 40, 0);
+    backdrop-filter: blur(5px);
+}
 .bg-dark-purple{
-    background: #0D0628;
+    background-color: #0D0628;
 }
 .bg-pink{
     background: #F61067;
@@ -183,7 +188,8 @@ p{
 .sticky{
     position: sticky;
     top: -1px;
-    z-index: 2;
+    z-index: 1;
+    transition: background-color 150ms ease-in-out;
 }
 .overflow-auto{
     overflow: auto;
@@ -271,7 +277,7 @@ p{
 }
 
 .img-vertical{
-    
+    z-index: 0;
     height: auto;
     /* width: 15vw; */
     width: 13vw;
@@ -458,6 +464,18 @@ p{
     min-height: 2.5rem;
     justify-content: space-between;
 }
+.landing-img{
+    opacity: 15%;
+    width: 100vw;
+}
+.landing-container{
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+.landing-relative{
+    position: relative;
+}
 /*
 @media screen and (max-width: 525px) {
 .vw-70{
@@ -590,5 +608,11 @@ p{
     }
     .padding-top-5 {
         padding-top: 15vw;
+    }
+}
+@media screen and (max-width: 850px){
+    .landing-img{
+        height: 100vh;
+        width: auto;
     }
 }
