@@ -126,6 +126,9 @@ p{
     height: 13vh;
     /* max-height: 15vh; */
 }
+.vh-10{
+    height: 10vh;
+}
 
 
 .button-size{
@@ -272,7 +275,7 @@ p{
 }
 
 .title-btm-margin{
-    min-height: 50rem;
+    min-height: 60vh;
 }
 
 .margin-bottom-50{
@@ -486,6 +489,13 @@ p{
 .margin-top-img{
     margin-top: 5vh;
 }
+.to-top{
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+.visible{
+    opacity: 1;
+}
 /*
 @media screen and (max-width: 525px) {
 .vw-70{
@@ -497,9 +507,6 @@ p{
     .title-margin{
         margin-top: 80vw;
         /* margin-top: 10rem; */
-    }
-    .title-btm-margin{
-        min-height: 80vw;
     }
     li{
         margin-right: 20px;

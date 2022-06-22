@@ -187,3 +187,22 @@ function ContactIcons (){
 }
 
 createRoot(document.getElementById('contact-icons')).render(<ContactIcons />);
+
+function ToTop(){
+    useEffect( () => {
+        let element = document.getElementById('to-top');
+
+        let initOffset = element.clientHeight * 7;
+        document.addEventListener('scroll', () => {
+            if (element.parentElement.parentElement.offsetTop > initOffset) element.classList.add('visible');
+            else element.classList.remove('visible');
+        })
+    }, [])
+    return(
+        <>
+            <a href="#home" class="">To Top</a>
+        </>
+    )
+}
+
+createRoot(document.getElementById('to-top')).render(<ToTop />);
