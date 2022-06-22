@@ -200,7 +200,7 @@ function ToTop(){
     }, [])
     return(
         <>
-            <a href="#home" class="">To Top</a>
+            <a href="#home" class="hover transition-navbar">To Top</a>
         </>
     )
 }
