@@ -198,9 +198,18 @@ function ToTop(){
             else element.classList.remove('visible');
         })
     }, [])
+
+    function click(){
+        let navs = document.querySelectorAll('a[class^=transition-navbar]');
+
+        navs.forEach( (nav) => {
+            nav.classList.remove('font-white', 'click-white');
+        })
+    }
+
     return(
         <>
-            <a href="#home" class="hover transition-navbar">To Top</a>
+            <a href="#home" onClick={click} class="hover transition-navbar">To Top</a>
         </>
     )
 }
