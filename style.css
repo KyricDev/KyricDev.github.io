@@ -483,6 +483,9 @@ p{
 .scroll-margin-2{
     min-height: 1vh;
 }
+.margin-top-img{
+    margin-top: 5vh;
+}
 /*
 @media screen and (max-width: 525px) {
 .vw-70{
@@ -602,6 +605,9 @@ p{
     }
     .padding-top-5{
         padding-top: 8vh;
+    }
+    .margin-top-img{
+        margin-top: 0vh;
     }
 }
 @media screen and (max-height: 150vw) 
