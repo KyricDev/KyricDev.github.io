@@ -192,8 +192,10 @@ function ToTop(){
     useEffect( () => {
         let element = document.getElementById('to-top');
 
-        let initOffset = element.clientHeight * 7;
+        let initOffset = window.innerHeight;
         document.addEventListener('scroll', () => {
+            console.log(initOffset);
+            console.log(element.parentElement.parentElement.offsetTop);
             if (element.parentElement.parentElement.offsetTop > initOffset) element.classList.add('visible');
             else element.classList.remove('visible');
         })
