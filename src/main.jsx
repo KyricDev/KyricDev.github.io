@@ -209,7 +209,7 @@ function ToTop(){
 
     return(
         <>
-            <a href="#home" onClick={click} class="hover transition-navbar">To Top</a>
+            <a href="#home" onClick={click} className="hover transition-navbar">To Top</a>
         </>
     )
 }
