@@ -91,7 +91,7 @@ function MainNavBar (){
         let element = document.getElementById('main-navbar');
         let target = element.parentElement.parentElement;
         
-        const initOffset = target.clientHeight * 8;
+        const initOffset = window.innerHeight;
         let root = document;
         root.addEventListener('scroll', () => {
             if (target.offsetTop > initOffset) {
