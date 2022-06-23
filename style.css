@@ -498,7 +498,7 @@ p{
 }
 .back-to-top-icon{
     background: #75DBCD;
-    mask-image: url("./dist/icons/BackToTop.svg");
+    mask-image: url("./dist/icons/BackToTop3.svg");
     mask-size: 4vmin auto;
     mask-repeat: no-repeat;
     mask-position: center;
