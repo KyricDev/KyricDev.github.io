@@ -496,6 +496,20 @@ p{
 .visible{
     opacity: 1;
 }
+.back-to-top-icon{
+    background: #75DBCD;
+    mask-image: url("./dist/icons/BackToTop.svg");
+    mask-size: 4vmin auto;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    height: 4.1vmin;
+    width: 4.1vmin;
+    transition: transform 150ms ease-in-out;
+}
+.back-to-top-icon:hover{
+    background: #7ddf64;
+    transform: scale(1.2);
+}
 /*
 @media screen and (max-width: 525px) {
 .vw-70{

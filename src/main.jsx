@@ -211,7 +211,7 @@ function ToTop(){
 
     return(
         <>
-            <a href="#home" onClick={click} className="hover transition-navbar">To Top</a>
+            <a href="#home" onClick={click} className="back-to-top-icon" src="./dist/icons/BackToTop.svg"></a>
         </>
     )
 }
