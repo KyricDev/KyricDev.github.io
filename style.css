@@ -103,6 +103,9 @@ p{
 .vw-53{
     width: 53vw;
 }
+.vw-53:hover{
+    z-index: 0;
+}
 .contact-vw-53{
     width: 53vw;
 }
@@ -330,7 +333,12 @@ p{
 .z-b1{
     z-index: -1;
 }
-
+.z-b1:hover{
+    z-index: 0;
+}
+.z-b1:hover > div{
+    background: transparent;
+}
 .diamond{
     width: 2vw;
     max-width: 15px;
@@ -502,6 +510,10 @@ p{
     mask-size: 4vmin auto;
     mask-repeat: no-repeat;
     mask-position: center;
+    -webkit-mask-image: url("./dist/icons/BackToTop3.svg");
+    -webkit-mask-size: 4vmin auto;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
     height: 4.1vmin;
     width: 4.1vmin;
     transition: transform 150ms ease-in-out;
