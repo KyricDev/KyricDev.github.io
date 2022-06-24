@@ -79,16 +79,11 @@ p{
 .align-self-center{
     align-self: center;
 }
-
-/* .height-25r{
-    height: 50vh;
-} */
-
 .height-90{
     height: 60vh;
 }
 .title-margin{
-    margin-top: 20vw;
+    margin-top: 40vh;
 }
 .width-100{
     width: 100%;
@@ -127,7 +122,6 @@ p{
 
 .vh-15{
     height: 13vh;
-    /* max-height: 15vh; */
 }
 .vh-10{
     height: 10vh;
@@ -262,9 +256,6 @@ p{
     box-shadow: none;
     text-decoration: none;
 }
-/* .navbar{
-    padding: 1rem 0rem 1rem 0rem; 
-} */
 .transition-navbar{
     transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
 }
@@ -287,9 +278,6 @@ p{
 
 .img-vertical{
     z-index: 0;
-    /* height: auto;
-    width: 13vw;
-    min-width: 130px; */
     height: 60vh;
     width: auto;
     border-radius: 20px;
@@ -300,10 +288,6 @@ p{
     height: auto;
     width: 30vw;
     min-width: 170px;
-    /*
-    height: 0px;
-    width: 0px;
-    */
     border-radius: 20px;
     border: 5px solid black;
 }
@@ -522,18 +506,7 @@ p{
     background: #7ddf64;
     transform: scale(1.2);
 }
-/*
-@media screen and (max-width: 525px) {
-.vw-70{
-    width: 100vw;
-}
-}
-*/
 @media screen and (min-height: 109vw){
-    .title-margin{
-        margin-top: 80vw;
-        /* margin-top: 10rem; */
-    }
     li{
         margin-right: 20px;
     }
@@ -575,9 +548,6 @@ p{
     .desc-padding{
         padding: 25vh 0rem 25vh 0rem;
     }
-    /* .height-25r{
-        height: 65vw;
-    } */
     .height-90{
         height: 30vh;
     }
@@ -599,9 +569,6 @@ p{
         opacity: 1;
         top: -8.4%;
     }
-    /* .padding-top-10 {
-        padding-top: 65vw;
-    } */
     .icon-content::before {
         opacity: 0;
         top: -8.4%;
@@ -625,7 +592,6 @@ p{
         width: 70vw;
     }
     .img-vertical{
-        /* min-width: 170px; */
         width: auto;
         height: 40vh;
     }
@@ -645,18 +611,9 @@ p{
 }
 @media screen and (max-height: 150vw) 
               and (min-height: 109vw){
-    .title-margin{
-        margin-top: 55vw;
-    }
     .title-btm-margin{
         min-height: 55vw;
     }
-    /* .padding-top-10 {
-        padding-top: 32vw;
-    } */
-    /* .padding-top-5 {
-        padding-top: 15vw;
-    } */
 }
 @media screen and (max-width: 912px){
     .landing-img{
