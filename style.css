@@ -170,16 +170,14 @@ p{
 }
 
 .font-size-64{
-    font-size: clamp(1rem, 8vw, 2.667rem);
+    font-size: clamp(1rem, 4vmax, 5rem);
 }
 .font-size-24{
-    font-size: clamp(.375rem, 3vw, 1rem);
+    /* font-size: clamp(.375rem, 3.5vw, 1rem); */
+    font-size: clamp(.375rem, 1.7vmax, 2rem);
 }
 .font-size-20{
-    font-size: clamp(0.312rem, 3vw, 0.833rem);
-}
-.font-size-16{
-    font-size: clamp(0.250rem, 3vw, 0.667rem);
+    font-size: clamp(0.312rem, 1.6vmax, 1.5rem);
 }
 .text-align-center{
     text-align: center;
