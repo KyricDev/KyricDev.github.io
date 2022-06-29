@@ -10,11 +10,13 @@ function NavBar (props){
         selectors.forEach( selector => {
             selector.addEventListener("click", () => {
                 selector.classList.add('bg-white', 'click-diamond');
+                selector.childNodes[0].classList.add('enlarge-diamond');
 
                 let id = selector.id;
                 selectors.forEach( otherSelector => {
                     if ( id == otherSelector.id ) return;
                     otherSelector.classList.remove('bg-white', 'click-diamond');
+                    otherSelector.childNodes[0].classList.remove('enlarge-diamond');
                 })
 
                 let length = selector.id.length;
@@ -40,9 +42,12 @@ function NavBar (props){
 
     function scroll(e) {
         e.preventDefault();
-        let target = document.getElementById(e.target.hash.slice(1, ));
-        let section = parseInt( e.target.hash[ e.target.hash.length - 1 ] );
-        let scrollTarget = e.target.parentElement.parentElement.childNodes[1];
+        let key = e.target;
+        console.log(key);
+        console.log(key.hash);
+        let target = document.getElementById(key.hash.slice(1, ));
+        let section = parseInt( key.hash[ key.hash.length - 1 ] );
+        let scrollTarget = key.parentElement.parentElement.childNodes[1];
         let style = getComputedStyle(target);
         scrollTarget.scrollLeft = (target.clientWidth + parseInt(style.marginRight)) * (section - 1);
     }
@@ -51,10 +56,12 @@ function NavBar (props){
         <a key={props.section + "-selector-1"} 
             href={"#" + props.section + "1"} 
             id={props.section + "-selector-1"} 
-            className="diamond bg-green bg-white click-diamond" 
+            className="diamond bg-green bg-white click-diamond flex center-column center-row" 
             title={props.section + " 1"} 
             onClick={scroll} 
-        /> 
+        >
+            <div className="hidden-diamond enlarge-diamond"></div>        
+        </a>
     );
 
     for (let i = 1; i < parseInt(props.divisions); i++){
@@ -69,10 +76,12 @@ function NavBar (props){
             <a key={props.section + "-selector-" + (i + 1)} 
                 href={"#" + props.section + (i + 1)} 
                 id={props.section + "-selector-" + (i + 1)} 
-                className="diamond bg-green" 
+                className="diamond bg-green flex center-column center-row" 
                 title={props.section + " " + (i + 1)} 
                 onClick={scroll} 
-            /> 
+            >
+                <div className="hidden-diamond"></div>
+            </a>
         );
     }
 
@@ -194,8 +203,6 @@ function ToTop(){
 
         let initOffset = window.innerHeight;
         document.addEventListener('scroll', () => {
-            console.log(initOffset);
-            console.log(element.parentElement.parentElement.offsetTop);
             if (element.parentElement.parentElement.offsetTop > initOffset) element.classList.add('visible');
             else element.classList.remove('visible');
         })
