@@ -328,8 +328,8 @@ p{
     height: 2vw;
     max-height: 15px;
     transform: rotate(45deg);
-    transition: background 200ms ease-in-out;
-    transition-delay: 200ms;
+    transition: background 150ms ease-in-out;
+    transition-delay: 150ms;
 }
 
 .diamond:hover{
@@ -343,8 +343,8 @@ p{
     height: 0vw;
     max-height: 20px;
     border: 1px solid #75DBCD;
-    transition: all 200ms ease-in-out;
-    transition-delay: 200ms;
+    transition: all 150ms ease-in-out;
+    transition-delay: 150ms;
 }
 
 .enlarge-diamond{
