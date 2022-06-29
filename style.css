@@ -171,7 +171,7 @@ p{
 }
 
 .font-size-64{
-    font-size: clamp(1rem, 4vmax, 5rem);
+    font-size: clamp(1rem, 3.9vmax, 5rem);
 }
 .font-size-24{
     /* font-size: clamp(.375rem, 3.5vw, 1rem); */
