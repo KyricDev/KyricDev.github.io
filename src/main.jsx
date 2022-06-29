@@ -43,8 +43,6 @@ function NavBar (props){
     function scroll(e) {
         e.preventDefault();
         let key = e.target;
-        console.log(key);
-        console.log(key.hash);
         let target = document.getElementById(key.hash.slice(1, ));
         let section = parseInt( key.hash[ key.hash.length - 1 ] );
         let scrollTarget = key.parentElement.parentElement.childNodes[1];
